@@ -5,7 +5,6 @@
 
 :root {
     --primary-color: #055A05;
-    --secondary-color: #F4A261;
     --accent1-color: #264653;
     --accent2-color: #E9C46A;
 
@@ -214,21 +213,15 @@ main > section:first-of-type img {
 ======================================== */
 
 main > section:nth-of-type(2) {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 12px;
     padding: 24px 12px;
 }
 
 main > section:nth-of-type(2) h2 {
-    margin-bottom: 24px;
-}
-
-main > section:nth-of-type(2) {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 12px;
-}
-
-main > section:nth-of-type(2) h2 {
     grid-column: 1 / -1;
+    margin-bottom: 24px;
 }
 
 figure {
@@ -287,6 +280,7 @@ footer p {
     justify-content: center;
     width: 28px;
     height: 28px;
+    text-decoration: none;
 }
 
 footer .socialmedia img {
